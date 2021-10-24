@@ -1,0 +1,25 @@
+@import './libs/variables';
+
+footer {
+    background-color: #333333;
+    padding: 10px 20px;
+    color: white;
+
+    h2{
+        font-family: $font-title;
+        font-weight: normal;
+        font-size: 20px;
+        margin: 8px 8px 8px 0;
+    }
+
+    a {
+        text-decoration:none;
+        color:white;
+    }
+
+    i{ 
+        font-size: 13px;
+        margin-right: 8px;
+    }
+
+  }

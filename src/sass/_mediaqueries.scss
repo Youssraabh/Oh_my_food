@@ -1,0 +1,48 @@
+@media screen and (min-width:1024px){
+
+    .Functioning{
+        display: block;
+    }
+    .Functioning__card{
+        width: 20%;
+    }
+
+    .restaurants{
+        display: grid;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .restaurants__card{
+        margin-right: 350px;
+        width: 90%;
+    }
+    .restaurants__img{
+        height: 250px;
+    }
+    .restaurantsdesktop{
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+
+    }
+    .restaurants__new{
+        left: 38em;
+    }
+
+    .content{
+        height: 50px;
+    }
+
+    footer h2{
+        font-size: 30px;
+    }
+
+    .footerMobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        padding:10px 0;
+    }
+}
