@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6c08d5778c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Shrikhand&display=swap" rel="stylesheet">
     <link href="../src/sass/style.css" rel="stylesheet">
     <title>La note enchantée</title>
 </head>
@@ -27,7 +30,7 @@
                         <p class="content__title">Ravioles de foie gras</p>
                         <p class="content__description">Accompagnés de leur crème à la truffe</p>
                     </div>
-                    <div><p class="content__prix">25€</p></div>
+                    <div class="prix"><p class="content__prix">25€</p></div>
                     <div class="content__confirmation">
                         <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
                     </div>
@@ -37,7 +40,7 @@
                         <p class="content__title">Caviar osciètre</p>
                         <p class="content__description">Sur blini à la farine de blé noir</p>
                     </div>
-                    <div><p class="content__prix">35€</p></div>
+                    <div class="prix"><p class="content__prix">35€</p></div>
                     <div class="content__confirmation">
                         <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
                     </div>
@@ -47,7 +50,7 @@
                         <p class="content__title">Homard et espuma de potiron</p>
                         <p class="content__description">Mariné aux zestes d'orange</p>
                     </div>
-                    <div><p class="content__prix">20€</p></div>
+                    <div class="prix"><p class="content__prix">20€</p></div>
                     <div class="content__confirmation">
                         <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
                     </div>
@@ -57,7 +60,7 @@
                         <p class="content__title">Foie gras de canard cuit entier</p>
                         <p class="content__description">Confiture de figue et pain toasté</p>
                     </div>
-                    <div><p class="content__prix">35€</p></div>
+                    <div class="prix"><p class="content__prix">35€</p></div>
                     <div class="content__confirmation">
                         <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
                     </div>
@@ -72,7 +75,7 @@
                         <p class="content__title">Noix de coquilles Saint-Jacques</p>
                         <p class="content__description">Sur lit de purée de céleri-rave</p>
                     </div>
-                    <div><p class="content__prix">40€</p></div>
+                    <div class="prix"><p class="content__prix">40€</p></div>
                     <div class="content__confirmation">
                         <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
                     </div>
@@ -82,7 +85,7 @@
                         <p class="content__title">Langoustine poêlée</p>
                         <p class="content__description">Purée de patate douce</p>
                     </div>
-                    <div><p class="content__prix">35€</p></div>
+                    <div class="prix"><p class="content__prix">35€</p></div>
                     <div class="content__confirmation">
                         <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
                     </div>
@@ -92,7 +95,7 @@
                         <p class="content__title">Mijoté de queue de boeuf</p>
                         <p class="content__description">Et riz sauvage aux zestes de citron</p>
                     </div>
-                    <div><p class="content__prix">44€</p></div>
+                    <div class="prix"><p class="content__prix">44€</p></div>
                     <div class="content__confirmation">
                         <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
                     </div>
@@ -107,7 +110,7 @@
                         <p class="content__title">Macaron noisette et chocolat</p>
                         <p class="content__description">Glace au caramel brun et sel de Guérande</p>
                     </div>
-                    <div><p class="content__prix">18€</p></div>
+                    <div class="prix"><p class="content__prix">18€</p></div>
                     <div class="content__confirmation">
                         <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
                     </div>
@@ -117,7 +120,7 @@
                         <p class="content__title">Baba au rhum revisité</p>
                         <p class="content__description">Avec son coulis de citron</p>
                     </div>
-                    <div><p class="content__prix">22€</p></div>
+                    <div class="prix"><p class="content__prix">22€</p></div>
                     <div class="content__confirmation">
                         <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
                     </div>
@@ -127,7 +130,7 @@
                         <p class="content__title">Tarte au citron meringuée</p>
                         <p class="content__description">Déstructurée</p>
                     </div>
-                    <div><p class="content__prix">23€</p></div>
+                    <div class="prix"><p class="content__prix">23€</p></div>
                     <div class="content__confirmation">
                         <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
                     </div>
@@ -137,11 +140,13 @@
         <a href="#" class="button-commander"><p>Commmander</p></a>     
     </main>
     <footer>
-        <div><h2>Oh my food</h2></div>
-        <div><a href=#>Proposer un restaurant</a></div>
-        <div><a href=#>Devenir partenaire</a></div>
-        <div><a href=#>Mentions légales</a></div>
-        <div><a href="mailto=#">Contact</a></div>
+        <div class="titleFooter"><h2>Oh my food</h2></div>
+        <div class='footerMobile'>
+            <div><a href=#><i class="footer__icons fas fa-utensils"></i>Proposer un restaurant</a></div>
+            <div><a href=#><i class="footer__icons fas fa-hands-helping"></i>Devenir partenaire</a></div>
+            <div><a href=#>Mentions légales</a></div>
+            <div><a href="mailto:contact@ohmyfood.com">Contact</a></div>
+        </div>
     </footer>
 </body>
 </html>

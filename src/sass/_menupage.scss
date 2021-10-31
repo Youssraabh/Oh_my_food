@@ -9,9 +9,9 @@
     display: flex;
     height: 70px;
     justify-content: center;
-    position: fixed;
+    /**position: fixed;*/
     width: 100%;
-    z-index: 3;
+    /**z-index: 3;*/
     
     &__backLinkHome {
         left: 15px;
@@ -35,7 +35,7 @@
     }
 }
 
-.heart {
+.title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,6 +49,14 @@
         font-size:30px;
         padding-right: 20px;
         color: black;
+        &:hover{
+            animation: fill 1s ease-out;
+            font-weight: bold;
+            background: linear-gradient($colorPrimary, $colorSecondary);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
 }
 
@@ -83,12 +91,15 @@
 }
 }
 
+
 .content {
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 5px 5px 5px rgba(0,0,0,.10);
     margin: 20px 0px;
     overflow: hidden;
+    height: 70px;
+    max-width: 100%;
     /*padding: 10px;*/
     display: flex;
     align-items: center;
@@ -114,18 +125,26 @@
         flex: 1;
         white-space: nowrap;
         position: relative;
+        max-width: 240px;
+        &:hover{
+            text-overflow: ellipsis;
+        }
     }
     &__title{
         flex: 1;
         font-family: $font-content;
         font-size: 16px;
         font-weight: bold;
-        margin: 0;
+        margin: 0 0 4px 0;
         padding-left: 10px;
     }
     &__description{
         margin: 0;
         padding-left: 10px;
+        font-family: $font-content;
+        font-weight: 100;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
 
     &__prix{
@@ -135,11 +154,12 @@
         font-weight: 700;
         justify-content: flex-end;
         padding-right: 10px;
+        margin-left: 60px;
     }
 
     &__confirmation {
         width: 0px;
-        height: 52px;
+        height: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -148,6 +168,9 @@
         border-radius: 0px 15px 15px 0px;
         background-color: #99E2D0;
         transition: width 280ms;
+        &:hover .prix{
+            margin-left: 0;
+        }
      
     }
 
@@ -157,13 +180,18 @@
     }
 }
 
+.prix{
+    height: 100%;
+    display: flex;
+    max-width: 60px;
+}
 .button-commander{
     @include flexCenter;
     text-decoration: none;
     padding:15px 15px;
     border-radius: 30px;
     box-shadow: -1px 3px 25px -10px rgb(177, 125, 219);
-    background: linear-gradient(0deg,#ff79da 0%, #9356dc 100%);
+    background: linear-gradient(0deg,#9356dc 0%, #ff79da 100%);
     color: white;
     color:$colorWhite;
     height: 30px;
@@ -171,10 +199,8 @@
     width: 140px;
     margin: 30px auto 50px auto;
     border-radius: 10rem;
-    transform: scale(1);
-    transition: transform 400ms;
     &:hover {
-        transform: scale(1.15);
+        box-shadow: -1px 3px 25px -10px rgba(0,0,0,0.65);
     }
 
     p {

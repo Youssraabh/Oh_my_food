@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6c08d5778c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Shrikhand&display=swap" rel="stylesheet">
     <link href="../src/sass/style.css" rel="stylesheet">
     <title>La palette du goût</title>
 </head>
@@ -15,123 +18,127 @@
     </header>
     <img src="../restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="header-title__banniere-img" alt="la palette du gout">
     <main class="menus">
-        <section class="heart"> 
+        <section class="title"> 
             <h1>La palette du goût</h1>
             <a href="index.html"><i class="far fa-heart"></i></a>
         </section>
-        <section class="menus">
-            <div class="menus-restaurants">
-                <p class="menus-restaurants__title">ENTRÉES</p>
-                <div class="content">
-                    <div class="content__card">
-                        <p class="content__title">Fricassée d'escargot</p>
-                        <p class="content__description">Au piment d'Espelette</p>
+        <div class="menusDesktop">
+            <section class="menus">
+                <div class="menus-restaurants">
+                    <p class="menus-restaurants__title">ENTRÉES</p>
+                    <div class="content">
+                        <div class="content__card">
+                            <p class="content__title">Fricassée d'escargot</p>
+                            <p class="content__description">Au piment d'Espelette</p>
+                        </div>
+                        <div class="prix"><p class="content__prix">25€</p></div>
+                        <div class="content__confirmation">
+                            <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
+                        </div>
                     </div>
-                    <div><p class="content__prix">25€</p></div>
-                    <div class="content__confirmation">
-                        <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
+                    <div class="content">
+                        <div class="content__card">
+                            <p class="content__title">Foie gras de canard mi-cuit</p>
+                            <p class="content__description">Et ses copeaux de truffe noire</p>
+                        </div>
+                        <div class="prix"><p class="content__prix">35€</p></div>
+                        <div class="content__confirmation">
+                            <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="content ">
-                    <div class="content__card">
-                        <p class="content__title">Foie gras de canard mi-cuit</p>
-                        <p class="content__description">Et ses copeaux de truffe noire</p>
-                    </div>
-                    <div><p class="content__prix">35€</p></div>
-                    <div class="content__confirmation">
-                        <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="content ">
-                    <div class="content__card">
-                        <p class="content__title">Oeuf au plat</p>
-                        <p class="content__description">Assaisonné à la truffe sur lit de caviar</p>
-                    </div>
-                    <div><p class="content__prix">20€</p></div>
-                    <div class="content__confirmation">
-                        <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="menus">
-            <div class="menus-restaurants">
-                <p class="menus-restaurants__title">PLATS</p>
-                <div class="content">
-                    <div class="content__card">
-                        <p class="content__title">Filet de boeuf aux herbes</p>
-                        <p class="content__description">Accompagné de sa ribambelle de légumes</p>
-                    </div>
-                    <div><p class="content__prix">40€</p></div>
-                    <div class="content__confirmation">
-                        <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
+                    <div class="content ">
+                        <div class="content__card">
+                            <p class="content__title">Oeuf au plat</p>
+                            <p class="content__description">Assaisonné à la truffe sur lit de caviar</p>
+                        </div>
+                        <div class="prix"><p class="content__prix">20€</p></div>
+                        <div class="content__confirmation">
+                            <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="content">
-                    <div class="content__card">
-                        <p class="content__title">Parmentier de queue de boeuf</p>
-                        <p class="content__description">À la truffe noire sur sa purée de panais</p>
+            </section>
+            <section class="menus">
+                <div class="menus-restaurants">
+                    <p class="menus-restaurants__title">PLATS</p>
+                    <div class="content">
+                        <div class="content__card">
+                            <p class="content__title">Filet de boeuf aux herbes</p>
+                            <p class="content__description">Accompagné de sa ribambelle de légumes</p>
+                        </div>
+                        <div class="prix"><p class="content__prix">40€</p></div>
+                        <div class="content__confirmation">
+                            <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
+                        </div>
                     </div>
-                    <div><p class="content__prix">35€</p></div>
-                    <div class="content__confirmation">
-                        <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
+                    <div class="content">
+                        <div class="content__card">
+                            <p class="content__title">Parmentier de queue de boeuf</p>
+                            <p class="content__description">À la truffe noire sur sa purée de panais</p>
+                        </div>
+                        <div class="prix"><p class="content__prix">35€</p></div>
+                        <div class="content__confirmation">
+                            <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="content">
-                    <div class="content__card">
-                        <p class="content__title">Filet de turbot</p>
-                        <p class="content__description">Aux agrumes</p>
-                    </div>
-                    <div><p class="content__prix">44€</p></div>
-                    <div class="content__confirmation">
-                        <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="menus">
-            <div class="menus-restaurants">
-                <p class="menus-restaurants__title">DESSSERTS</p>
-                <div class="content">
-                    <div class="content__card">
-                        <p class="content__title">Paris-Brest</p>
-                        <p class="content__description">Revisité</p>
-                    </div>
-                    <div><p class="content__prix">18€</p></div>
-                    <div class="content__confirmation">
-                        <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="content__card">
-                        <p class="content__title">Macaron au chocolat d'exception</p>
-                        <p class="content__description">Et glace à la vanille de Madagascar</p>
-                    </div>
-                    <div><p class="content__prix">22€</p></div>
-                    <div class="content__confirmation">
-                        <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
+                    <div class="content">
+                        <div class="content__card">
+                            <p class="content__title">Filet de turbot</p>
+                            <p class="content__description">Aux agrumes</p>
+                        </div>
+                        <div class="prix"><p class="content__prix">44€</p></div>
+                        <div class="content__confirmation">
+                            <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
+                        </div>
                     </div>
                 </div>
-                <div class="content">
-                    <div class="content__card">
-                        <p class="content__title">Mousse au chocolat</p>
-                        <p class="content__description">Au piment d'Espelette et à la truffe noire</p>
+            </section>
+            <section class="menus">
+                <div class="menus-restaurants">
+                    <p class="menus-restaurants__title">DESSSERTS</p>
+                    <div class="content">
+                        <div class="content__card">
+                            <p class="content__title">Paris-Brest</p>
+                            <p class="content__description">Revisité</p>
+                        </div>
+                        <div class="prix"><p class="content__prix">18€</p></div>
+                        <div class="content__confirmation">
+                            <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
+                        </div>
                     </div>
-                    <div><p class="content__prix">23€</p></div>
-                    <div class="content__confirmation">
-                        <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
+                    <div class="content">
+                        <div class="content__card">
+                            <p class="content__title">Macaron au chocolat d'exception</p>
+                            <p class="content__description">Et glace à la vanille de Madagascar</p>
+                        </div>
+                        <div class="prix"><p class="content__prix">22€</p></div>
+                        <div class="content__confirmation">
+                            <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="content__card">
+                            <p class="content__title">Mousse au chocolat</p>
+                            <p class="content__description">Au piment d'Espelette et à la truffe noire</p>
+                        </div>
+                        <div class="prix"><p class="content__prix">23€</p></div>
+                        <div class="content__confirmation">
+                            <i class="fas fa-check-circle content__icon" aria-hidden="true"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <a href="#" class="button-commander"><div class='buton-commander-textCenter'><p>Commmander</p></div></a>     
     </main>
     <footer>
-        <div><h2>Oh my food</h2></div>
-        <div><i class="fas fa-utensils"></i><a href=#>Proposer un restaurant</a></div>
-        <div><i class="fas fa-hands-helping"></i><a href=#>Devenir partenaire</a></div>
-        <div><a href=#>Mentions légales</a></div>
-        <div><a href="mailto=#">Contact</a></div>
+        <div class="titleFooter"><h2>Oh my food</h2></div>
+        <div class='footerMobile'>
+            <div><a href=#><i class="footer__icons fas fa-utensils"></i>Proposer un restaurant</a></div>
+            <div><a href=#><i class="footer__icons fas fa-hands-helping"></i>Devenir partenaire</a></div>
+            <div><a href=#>Mentions légales</a></div>
+            <div><a href="mailto:contact@ohmyfood.com">Contact</a></div>
+        </div>
     </footer>
 </body>
 </html>
