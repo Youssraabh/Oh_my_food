@@ -111,8 +111,13 @@
         animation-delay: #{$i/10}s;
        }
     }
+    &:hover &__prix{
+        padding-left: 0;
+        padding-right: 33px;
+    }
     &:hover &__confirmation{
         width: 55px;
+        transform-origin: left;
     }
 
     &:hover &__icon{
@@ -154,7 +159,7 @@
         font-weight: 700;
         justify-content: flex-end;
         padding-right: 10px;
-        margin-left: 60px;
+        padding-left: 70px;
     }
 
     &__confirmation {
@@ -168,9 +173,7 @@
         border-radius: 0px 15px 15px 0px;
         background-color: #99E2D0;
         transition: width 280ms;
-        &:hover .prix{
-            margin-left: 0;
-        }
+        
      
     }
 
@@ -183,7 +186,6 @@
 .prix{
     height: 100%;
     display: flex;
-    max-width: 60px;
 }
 .button-commander{
     @include flexCenter;
