@@ -151,7 +151,11 @@ header {
 
     &__title {
         margin-right: 125px;
-        font-family:$font-content;
+        font-family: $font-content;
+    }
+
+    li{
+        font-family: $font-content;
     }
 }
 
@@ -233,6 +237,7 @@ header {
         border-radius: 5px;
         font-size: 0.9em;
         font-weight: 500;
+        font-family: $font-content;
     }
 
 }
