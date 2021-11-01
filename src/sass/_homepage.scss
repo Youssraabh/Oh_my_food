@@ -15,7 +15,7 @@ html,body{
     left: 0;
     top: 0;
     height: 100vh;
-    animation: disappear 3000ms forwards;
+    animation: disappear 1500ms forwards;
     &__spinner {
         border-top: 10px solid $colorTertiary;
         border-bottom: 10px solid $colorLightgray;
@@ -94,7 +94,6 @@ header {
 
     &__Button {
         font-weight: bold;
-        padding:15px 35px;
         height: 1px;
         align-items: center;
         font-family:$font-content;
@@ -103,7 +102,7 @@ header {
         background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
         color:$colorWhite;
         cursor: pointer;
-        padding: 1.85rem 3rem;
+        padding: 1.5rem 1.2rem;
         border-radius: 10rem;
         &:hover {
             box-shadow: -1px 3px 25px -10px rgba(0,0,0,0.65);

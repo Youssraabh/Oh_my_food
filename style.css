@@ -209,13 +209,13 @@ footer {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  padding: 15px 15px;
+  padding: 9px 13px;
   border-radius: 30px;
   box-shadow: -1px 3px 25px -10px #b17ddb;
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
   color: white;
   color: white;
-  height: 30px;
+  height: 25px;
   cursor: pointer;
   width: 140px;
   margin: 30px auto 50px auto;
@@ -265,7 +265,7 @@ html, body {
   left: 0;
   top: 0;
   height: 100vh;
-  animation: disappear 3000ms forwards; }
+  animation: disappear 1500ms forwards; }
   .loader__spinner {
     border-top: 10px solid #99E2D0;
     border-bottom: 10px solid lightgray;
@@ -334,8 +334,7 @@ header {
     justify-content: center; }
   .explorer__Button {
     font-weight: bold;
-    padding: 15px 40px;
-    height: 2px;
+    height: 1px;
     align-items: center;
     font-family: "Roboto", sans-serif;
     border-radius: 30px;
@@ -343,7 +342,7 @@ header {
     background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
     color: white;
     cursor: pointer;
-    padding: 1.85rem 3rem;
+    padding: 1.5rem 1.2rem;
     border-radius: 10rem; }
     .explorer__Button:hover {
       box-shadow: -1px 3px 25px -10px rgba(0, 0, 0, 0.65); }
