@@ -1,0 +1,19 @@
+{
+  "name": "writting-sass",
+  "version": "1.0.0",
+  "description": "\" \"",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./SASS/header.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Youssraabh/Youssra_abih_3_12092021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Youssraabh/Youssra_abih_3_12092021/issues"
+  },
+  "homepage": "https://github.com/Youssraabh/Youssra_abih_3_12092021#readme"
+}
