@@ -56,6 +56,9 @@
         width: 350px;
     }
 
+    .content__description {
+        overflow: visible;
+    }
     footer h2{
         font-size: 30px;
         padding: 0 0 18px 35px;
@@ -92,6 +95,10 @@
     }
     .restaurants h2{
         padding-right: 570px;
+    }
+
+    .content__prix{
+        margin-left: 330px;
     }
 
     footer{
