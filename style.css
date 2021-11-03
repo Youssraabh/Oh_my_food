@@ -302,7 +302,8 @@ header {
   align-items: center;
   justify-content: center;
   background-color: lightgray;
-  box-shadow: inset 0 7px 0.3em -5px grey; }
+  box-shadow: inset 0 7px 0.3em -5px grey;
+  font-family: "Roboto", sans-serif; }
   .Localisation i {
     margin-right: 20px; }
 
