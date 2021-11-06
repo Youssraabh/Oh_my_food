@@ -120,7 +120,6 @@ footer {
   border-radius: 15px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   margin: 20px 0px;
-  overflow: hidden;
   height: 70px;
   max-width: 100%;
   justify-content: space-between;
@@ -153,6 +152,8 @@ footer {
   .content:hover .content__confirmation {
     width: 55px;
     transform-origin: left; }
+  .content:hover .content__description {
+    overflow: hidden; }
   .content:hover .content__icon {
     opacity: 1;
     transform: rotate(345deg); }
@@ -161,8 +162,6 @@ footer {
     white-space: nowrap;
     position: relative;
     max-width: 240px; }
-    .content__card:hover {
-      text-overflow: ellipsis; }
   .content__title {
     flex: 1;
     font-family: "Roboto", sans-serif;
@@ -176,7 +175,7 @@ footer {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     text-overflow: ellipsis;
-    overflow: hidden; }
+    overflow: visible; }
   .content__prix {
     align-items: flex-end;
     display: flex;
@@ -221,7 +220,8 @@ footer {
   margin: 30px auto 50px auto;
   border-radius: 10rem; }
   .button-commander:hover {
-    box-shadow: -1px 3px 25px -10px rgba(0, 0, 0, 0.65); }
+    box-shadow: -1px 3px 25px -10px rgba(0, 0, 0, 0.65);
+    filter: brightness(1.5); }
   .button-commander p {
     align-items: center; }
 
@@ -346,7 +346,8 @@ header {
     padding: 1.5rem 1.2rem;
     border-radius: 10rem; }
     .explorer__Button:hover {
-      box-shadow: -1px 3px 25px -10px rgba(0, 0, 0, 0.65); }
+      box-shadow: -1px 3px 25px -10px rgba(0, 0, 0, 0.65);
+      filter: brightness(1.5); }
 
 /*Fonctionnement*/
 .Functioning h2 {
@@ -377,7 +378,7 @@ header {
   margin-right: 22px;
   margin-left: 22px;
   color: lightgray; }
-  .Functioning__icon-color3 {
+  .Functioning__icon:hover {
     color: #9356DC; }
 .Functioning__title {
   margin-right: 125px;
@@ -477,7 +478,8 @@ header {
 
   .restaurants__img {
     height: 250px;
-    width: 100%; }
+    width: 100%;
+    object-fit: cover; }
 
   .restaurantsdesktop {
     grid-template-columns: 1fr 1fr;
@@ -497,9 +499,6 @@ header {
   .content {
     height: 60px;
     width: 350px; }
-
-  .content__description {
-    overflow: visible; }
 
   footer h2 {
     font-size: 30px;

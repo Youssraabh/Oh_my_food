@@ -33,6 +33,7 @@
     .restaurants__img{
         height: 250px;
         width: 100%;
+        object-fit: cover;
     }
     .restaurantsdesktop{
         grid-template-columns: 1fr 1fr;
@@ -55,10 +56,7 @@
         height: 60px;
         width: 350px;
     }
-
-    .content__description {
-        overflow: visible;
-    }
+   
     footer h2{
         font-size: 30px;
         padding: 0 0 18px 35px;

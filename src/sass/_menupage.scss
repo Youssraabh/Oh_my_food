@@ -97,7 +97,6 @@
     border-radius: 15px;
     box-shadow: 5px 5px 5px rgba(0,0,0,.10);
     margin: 20px 0px;
-    overflow: hidden;
     height: 70px;
     max-width: 100%;
     justify-content: space-between;
@@ -120,6 +119,10 @@
         transform-origin: left;
     }
 
+    &:hover &__description {
+        overflow: hidden;
+    }
+
     &:hover &__icon{
         opacity: 1;
         transform: rotate(345deg);
@@ -131,9 +134,6 @@
         white-space: nowrap;
         position: relative;
         max-width: 240px;
-        &:hover{
-            text-overflow: ellipsis;
-        }
     }
     &__title{
         flex: 1;
@@ -149,7 +149,7 @@
         font-family: $font-content;
         font-weight: 100;
         text-overflow: ellipsis;
-        overflow: hidden;
+        overflow: visible;
     }
 
     &__prix{
@@ -203,6 +203,7 @@
     border-radius: 10rem;
     &:hover {
         box-shadow: -1px 3px 25px -10px rgba(0,0,0,0.65);
+        filter: brightness(1.5);
     }
 
     p {
