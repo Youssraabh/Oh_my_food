@@ -363,7 +363,11 @@ header {
   margin-left: -20px;
   margin-bottom: 20px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  cursor: pointer; }
+  .Functioning__card:hover {
+    background-color: #e4d5f6;
+    box-shadow: 3px 3px 20px #c6bfbf; }
 .Functioning__number {
   height: 24px;
   width: 24px;
@@ -378,15 +382,14 @@ header {
 .Functioning__icon {
   margin-right: 22px;
   margin-left: 22px;
-  color: lightgray;
-  cursor: pointer; }
-  .Functioning__icon:hover {
-    color: #9356DC; }
+  color: lightgray; }
 .Functioning__title {
   margin-right: 125px;
   font-family: "Roboto", sans-serif; }
 .Functioning li {
   font-family: "Roboto", sans-serif; }
+.Functioning .Functioning__card:hover .Functioning__icon {
+  color: #9356DC; }
 
 /* restaurants */
 .restaurants {
@@ -412,7 +415,8 @@ header {
   .restaurants__img {
     width: 350px;
     height: 180px;
-    border-radius: 15px 15px 0 0; }
+    border-radius: 15px 15px 0 0;
+    object-fit: cover; }
   .restaurants__cubeDetails {
     display: flex;
     align-items: center;
@@ -480,8 +484,7 @@ header {
 
   .restaurants__img {
     height: 250px;
-    width: 100%;
-    object-fit: cover; }
+    width: 100%; }
 
   .restaurantsdesktop {
     grid-template-columns: 1fr 1fr;

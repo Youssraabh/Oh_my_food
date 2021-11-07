@@ -133,6 +133,11 @@ header {
         margin-bottom: 20px;
         display: flex;
         align-items: center;
+        cursor: pointer;
+        &:hover{
+            background-color: #e4d5f6;
+            box-shadow: 3px 3px 20px #c6bfbf;
+        }
 
     }
 
@@ -152,10 +157,6 @@ header {
         margin-right: 22px;
         margin-left: 22px;
         color: $colorLightgray;
-        cursor: pointer;
-        &:hover {
-            color: $colorPrimary;
-        }
     }
 
     &__title {
@@ -165,6 +166,10 @@ header {
 
     li{
         font-family: $font-content;
+    }
+
+    .Functioning__card:hover .Functioning__icon{
+        color:$colorPrimary;
     }
 }
 
@@ -196,6 +201,7 @@ header {
         width: 350px;
         height: 180px;
         border-radius: 15px 15px 0 0;
+        object-fit: cover;
     }
 
     &__cubeDetails {
